@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <title>landing-page</title>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-color navbar--background">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="image/Group 30.png" alt="Logo" width="60" height="35" class="d-inline-block align-top"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link custom-text-black" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link custom-text-black" href="#">Clubs</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="btn btn-outline-dark rounded-pill mr-2 just-left-margin" href="#">Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="btn btn-success text-white rounded-pill mt-2" href="#">Log In</a> -->
+                <a class="btn btn-success rounded-pill btn-outline-dark cus-mt" href="#">Log In</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+    <div class="background-image">
+        <div class="parent">
+            <div class="hero-section">
+<h1 class="p-1">Hello, User</h1>
+<h1 class="p2">Welcome To Üsküdar Community</h1>
+<p class="p-3">discover exciting clubs and activities</p>
+<div class="links">
+<a href="" class="call-action-white">join</a>
+<a href="" class="call-action-black">learn more</a>
+
+</div>
+</div>
+</div>
+</div>
+<main>
+
+
+
+
+    
+    <div class="parent">
+    <div class="part-1">
+        <div class="text-before">
+    <p class="club">our cloub</p>
+    
+        </div>
+
+<h2 class="clubs">Clubs</h2>
+<p class="explore">Explore our student clubs for fun and exciting experiences.</p>
+<div class="flex--items">
+<div class="flex-item-1">
+<img src="/image/nermin1.JPG" alt="" class="item-image-1">
+<p class="item-text">Club name</p>
+<p class="item-text-name">catogary</p>
+</div>
+<div class="flex-item-1">
+    <img src="/image/nermin1.JPG" alt="" class="item-image-1">
+    <p class="item-text">Club name</p>
+    <p class="item-text-name">catogary</p>
+    </div>
+    <div class="flex-item-1">
+        <img src="/image/nermin1.JPG" alt="" class="item-image-1">
+        <p class="item-text">Club name</p>
+        <p class="item-text-name">catogary</p>
+        </div>
+
+
+</div>
+<div class="links-view"><a href="" class="view-all">View all</a></div>
+
+<div class="text-before">
+    <p class="club">Stay Connected</p>
+    
+        </div>
+
+        <h2 class="clubs">Events</h2>
+        <p class="explore">Stay informed about the latest activities happening in all clubs.</p>
+        
+
+
+
+
+        <!-- container -->
+        <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- Start card section -->
+          <div class="col">
+            <!-- Wrap the card with an anchor tag -->
+            <!-- Event link -->
+            <a href="{% url 'event_detail' event.pk %}" class="card-link">
+              <div class="card h-100">
+                <div class="card-img-top-container">
+                  <!-- Event images -->
+                  <img src="/image/nermin1.JPG" class="card-img-top" alt="...">
+                  <div class="card-img-overlay d-flex justify-content-end flex-column">
+                    <div class="club-name-container">
+                      <!-- club_name -->
+                      <p class="club-name">ergerg</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <!-- Event title -->
+                  <h5 class="card-title">ergaergergerag</h5>
+                  <!-- Event body -->
+                  <p class="card-text">dfvdfvaergergergaerg</p>
+                </div>
+            </a>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <!-- Event date -->
+              <small class="text-muted"><i class="fa-regular fa-calendar-days"></i> 02/02/202</small>
+              <div class="d-flex">
+                <a class="btn btn-danger me-2" href="{% url 'event_delete' event.pk %}">Delete</a>
+                <a class="btn btn-primary" href="{% url 'event_edit' event.pk %}">Edit</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat the cards -->
+        <!-- Repeat the cards -->
+        <div class="col">
+          <!-- Wrap the card with an anchor tag -->
+          <!-- Event link -->
+          <a href="{% url 'event_detail' event.pk %}" class="card-link">
+            <div class="card h-100">
+              <div class="card-img-top-container">
+                <!-- Event images -->
+                <img src="/image/nermin1.JPG" class="card-img-top" alt="...">
+                <div class="card-img-overlay d-flex justify-content-end flex-column">
+                  <div class="club-name-container">
+                    <!-- club_name -->
+                    <p class="club-name">ergerg</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <!-- Event title -->
+                <h5 class="card-title">ergaergergerag</h5>
+                <!-- Event body -->
+                <p class="card-text">dfvdfvaergergergaerg</p>
+              </div>
+          </a>
+          <div class="card-footer d-flex justify-content-between align-items-center">
+            <!-- Event date -->
+            <small class="text-muted"><i class="fa-regular fa-calendar-days"></i> 02/02/202</small>
+            <div class="d-flex">
+              <a class="btn btn-danger me-2" href="{% url 'event_delete' event.pk %}">Delete</a>
+              <a class="btn btn-primary" href="{% url 'event_edit' event.pk %}">Edit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the cards -->
+      <!-- Repeat the cards -->
+      <div class="col">
+        <!-- Wrap the card with an anchor tag -->
+        <!-- Event link -->
+        <a href="{% url 'event_detail' event.pk %}" class="card-link">
+          <div class="card h-100">
+            <div class="card-img-top-container">
+              <!-- Event images -->
+              <img src="/image/nermin1.JPG" class="card-img-top" alt="...">
+              <div class="card-img-overlay d-flex justify-content-end flex-column">
+                <div class="club-name-container">
+                  <!-- club_name -->
+                  <p class="club-name">ergerg</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- Event title -->
+              <h5 class="card-title">ergaergergerag</h5>
+              <!-- Event body -->
+              <p class="card-text">dfvdfvaergergergaerg</p>
+            </div>
+        </a>
+        <div class="card-footer d-flex justify-content-between align-items-center">
+          <!-- Event date -->
+          <small class="text-muted"><i class="fa-regular fa-calendar-days"></i> 02/02/202</small>
+          <div class="d-flex">
+            <a class="btn btn-danger me-2" href="{% url 'event_delete' event.pk %}">Delete</a>
+            <a class="btn btn-primary" href="{% url 'event_edit' event.pk %}">Edit</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+</div>
+
+
+    </div>
+    </div>
+    
+    
+    
+</div>    
+    
+<h2 class="clubs about">About Us</h2>
+
+<p class="explore at">At Uskudar University, we're passionate about enhancing the university experience by providing a centralized platform for clubs to showcase their events and engage with the student community. Whether you're a club officer, a student looking for exciting activities, or a university staff member interested in campus life, we're here to connect you with the latest events and opportunities on campus.</p>
+<p class="explore us">Join us as we continue to connect clubs and students, making it easier than ever to discover and participate in the vibrant campus life at Uskudar University</p>
+<img src="/image/student-walking.jpeg" alt="" class="image-student">
+<div class="flex--about-section">
+    <div class="flex--about--1">
+<div class="flex-with-icon">
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 2C18 1.46957 17.7893 0.960859 17.4142 0.585786C17.0391 0.210714 16.5304 0 16 0C15.4696 0 14.9609 0.210714 14.5858 0.585786C14.2107 0.960859 14 1.46957 14 2V4C14 4.53043 14.2107 5.03914 14.5858 5.41421C14.9609 5.78929 15.4696 6 16 6C16.5304 6 17.0391 5.78929 17.4142 5.41421C17.7893 5.03914 18 4.53043 18 4V2ZM27.314 7.514C27.6783 7.1368 27.8799 6.63159 27.8753 6.1072C27.8708 5.5828 27.6605 5.08118 27.2896 4.71036C26.9188 4.33955 26.4172 4.12921 25.8928 4.12465C25.3684 4.1201 24.8632 4.32168 24.486 4.686L23.072 6.1C22.7077 6.4772 22.5061 6.98241 22.5107 7.5068C22.5152 8.0312 22.7255 8.53282 23.0964 8.90364C23.4672 9.27445 23.9688 9.48479 24.4932 9.48935C25.0176 9.49391 25.5228 9.29232 25.9 8.928L27.314 7.514ZM32 16C32 16.5304 31.7893 17.0391 31.4142 17.4142C31.0391 17.7893 30.5304 18 30 18H28C27.4696 18 26.9609 17.7893 26.5858 17.4142C26.2107 17.0391 26 16.5304 26 16C26 15.4696 26.2107 14.9609 26.5858 14.5858C26.9609 14.2107 27.4696 14 28 14H30C30.5304 14 31.0391 14.2107 31.4142 14.5858C31.7893 14.9609 32 15.4696 32 16ZM6.1 8.928C6.28449 9.11902 6.50518 9.27138 6.74919 9.3762C6.9932 9.48102 7.25564 9.53619 7.5212 9.5385C7.78676 9.54081 8.05012 9.49021 8.29591 9.38964C8.5417 9.28908 8.76501 9.14058 8.95279 8.95279C9.14058 8.76501 9.28908 8.5417 9.38964 8.29591C9.49021 8.05012 9.54081 7.78676 9.5385 7.5212C9.53619 7.25564 9.48102 6.9932 9.3762 6.74919C9.27138 6.50518 9.11902 6.28449 8.928 6.1L7.514 4.686C7.1368 4.32168 6.63159 4.1201 6.1072 4.12465C5.5828 4.12921 5.08118 4.33955 4.71036 4.71036C4.33955 5.08118 4.12921 5.5828 4.12465 6.1072C4.1201 6.63159 4.32168 7.1368 4.686 7.514L6.1 8.928ZM6 16C6 16.5304 5.78929 17.0391 5.41421 17.4142C5.03914 17.7893 4.53043 18 4 18H2C1.46957 18 0.960859 17.7893 0.585786 17.4142C0.210714 17.0391 0 16.5304 0 16C0 15.4696 0.210714 14.9609 0.585786 14.5858C0.960859 14.2107 1.46957 14 2 14H4C4.53043 14 5.03914 14.2107 5.41421 14.5858C5.78929 14.9609 6 15.4696 6 16ZM12 28V26H20V28C20 29.0609 19.5786 30.0783 18.8284 30.8284C18.0783 31.5786 17.0609 32 16 32C14.9391 32 13.9217 31.5786 13.1716 30.8284C12.4214 30.0783 12 29.0609 12 28ZM20 24C20.03 23.32 20.416 22.708 20.954 22.282C22.2594 21.2525 23.2116 19.8419 23.6783 18.2463C24.145 16.6507 24.103 14.9493 23.5582 13.3787C23.0134 11.808 21.9927 10.4461 20.6382 9.48223C19.2836 8.51837 17.6625 8.00045 16 8.00045C14.3375 8.00045 12.7164 8.51837 11.3618 9.48223C10.0073 10.4461 8.98664 11.808 8.44181 13.3787C7.89698 14.9493 7.855 16.6507 8.32171 18.2463C8.78842 19.8419 9.74064 21.2525 11.046 22.282C11.586 22.708 11.97 23.32 11.998 24H20.002H20Z" fill="black"/>
+        </svg>
+<p class="icon-text-flex">Our Mission</p>  
+</div>      
+<p class="explore us">Join us as we continue to connect clubs and students, making it easier than ever to discover and participate in the vibrant campus life at Uskudar University</p>
+
+</div>
+<div class="flex--about--1">
+    <div class="flex-with-icon">
+        <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M36.333 20C36.333 24.2435 34.6473 28.3131 31.6467 31.3137C28.6461 34.3143 24.5765 36 20.333 36C16.0895 36 12.0199 34.3143 9.0193 31.3137C6.01872 28.3131 4.33301 24.2435 4.33301 20C4.33301 15.7565 6.01872 11.6869 9.0193 8.68629C12.0199 5.68571 16.0895 4 20.333 4C24.5765 4 28.6461 5.68571 31.6467 8.68629C34.6473 11.6869 36.333 15.7565 36.333 20ZM22.333 12C22.333 12.5304 22.1223 13.0391 21.7472 13.4142C21.3721 13.7893 20.8634 14 20.333 14C19.8026 14 19.2939 13.7893 18.9188 13.4142C18.5437 13.0391 18.333 12.5304 18.333 12C18.333 11.4696 18.5437 10.9609 18.9188 10.5858C19.2939 10.2107 19.8026 10 20.333 10C20.8634 10 21.3721 10.2107 21.7472 10.5858C22.1223 10.9609 22.333 11.4696 22.333 12ZM18.333 18C17.8026 18 17.2939 18.2107 16.9188 18.5858C16.5437 18.9609 16.333 19.4696 16.333 20C16.333 20.5304 16.5437 21.0391 16.9188 21.4142C17.2939 21.7893 17.8026 22 18.333 22V28C18.333 28.5304 18.5437 29.0391 18.9188 29.4142C19.2939 29.7893 19.8026 30 20.333 30H22.333C22.8634 30 23.3721 29.7893 23.7472 29.4142C24.1223 29.0391 24.333 28.5304 24.333 28C24.333 27.4696 24.1223 26.9609 23.7472 26.5858C23.3721 26.2107 22.8634 26 22.333 26V20C22.333 19.4696 22.1223 18.9609 21.7472 18.5858C21.3721 18.2107 20.8634 18 20.333 18H18.333Z" fill="black"/>
+            </svg>
+            
+    <p class="icon-text-flex">What We Offer </p>  
+    </div>      
+    <p class="explore us">On Uskudar University, clubs have the opportunity to showcase their events and reach a wider audience of students.</p>
+    
+    </div>
+    <div class="flex--about--1">
+        <div class="flex-with-icon">
+            <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.87449 17.5H10.7395C10.962 13.635 11.697 10.075 12.832 7.205C11.0045 8.3248 9.43803 9.82298 8.23793 11.5988C7.03784 13.3745 6.23195 15.3867 5.87449 17.5ZM20.667 0C15.3627 0 10.2756 2.10714 6.52486 5.85786C2.77413 9.60859 0.666992 14.6957 0.666992 20C0.666992 25.3043 2.77413 30.3914 6.52486 34.1421C10.2756 37.8929 15.3627 40 20.667 40C25.9713 40 31.0584 37.8929 34.8091 34.1421C38.5599 30.3914 40.667 25.3043 40.667 20C40.667 14.6957 38.5599 9.60859 34.8091 5.85786C31.0584 2.10714 25.9713 0 20.667 0ZM20.667 5C20.477 5 20.087 5.08 19.5045 5.655C18.9095 6.24 18.262 7.2125 17.662 8.61C16.6895 10.8775 15.9795 13.965 15.747 17.5H25.587C25.3545 13.965 24.6445 10.8775 23.672 8.61C23.072 7.21 22.422 6.24 21.8295 5.655C21.247 5.08 20.857 5 20.667 5ZM30.5945 17.5C30.372 13.635 29.637 10.075 28.502 7.205C30.3295 8.3248 31.896 9.82298 33.0961 11.5988C34.2962 13.3745 35.102 15.3867 35.4595 17.5H30.5945ZM25.587 22.5H15.747C15.9795 26.035 16.6895 29.1225 17.662 31.39C18.262 32.79 18.912 33.76 19.5045 34.345C20.087 34.92 20.477 35 20.667 35C20.857 35 21.247 34.92 21.8295 34.345C22.4245 33.76 23.0745 32.7875 23.672 31.39C24.6445 29.1225 25.3545 26.035 25.587 22.5ZM28.502 32.795C29.637 29.9275 30.372 26.365 30.5945 22.5H35.4595C35.102 24.6133 34.2962 26.6255 33.0961 28.4012C31.896 30.177 30.3295 31.6752 28.502 32.795ZM12.832 32.795C11.697 29.925 10.962 26.365 10.742 22.5H5.87449C6.23195 24.6133 7.03784 26.6255 8.23793 28.4012C9.43803 30.177 11.0045 31.6752 12.832 32.795Z" fill="black"/>
+                </svg>
+                
+        <p class="icon-text-flex">Join Our Community</p>  
+        </div>      
+        <p class="explore us"> Whether you're a club officer looking to promote your events or a student eager to explore campus activities, we invite you to join our vibrant community on Uskudar University. Together, let's make the most of the university experience and create unforgettable memories.</p>
+        
+        </div>
+</div>
+
+<div class="card3--with-background">
+
+<div class="cards-flex-with-shadow">
+    <div class="fixed-with-the-icons">
+    <div class="card-1-shadow">
+        <div class="position">
+    <svg class="position-icon"  width="216" height="214" viewBox="0 0 216 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d_3253_8691)">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M107.048 10.0381C121.286 10.9263 127.036 32.4479 139.931 39.3051C155.895 47.7947 177.648 40.1234 190.108 54.2077C203.092 68.8835 208.496 92.4451 204.921 112.766C201.385 132.871 186.372 147.972 171.527 159.833C158.728 170.058 141.802 167.878 127.342 174.747C110.237 182.871 97.5324 207.029 79.207 203.684C61.257 200.408 54.8569 174.935 43.0506 159.362C31.3496 143.927 7.84359 132.731 10.1594 112.606C12.6887 90.6258 40.2906 85.861 53.4097 69.3378C61.4686 59.1878 63.1084 44.5897 71.7363 35.051C81.864 23.8543 92.876 9.15403 107.048 10.0381Z" fill="url(#paint0_linear_3253_8691)"/>
+        </g>
+        <defs>
+        <filter id="filter0_d_3253_8691" x="6" y="10" width="204" height="202" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="4"/>
+        <feGaussianBlur stdDeviation="2"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3253_8691"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3253_8691" result="shape"/>
+        </filter>
+        <linearGradient id="paint0_linear_3253_8691" x1="206" y1="76.8048" x2="9.99999" y2="137.195" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#00B2AC"/>
+        <stop offset="0.613208" stop-color="#A9DE96"/>
+        </linearGradient>
+        </defs>
+        </svg>
+        <p class="number">17.000+</p>
+    </div>
+    </div>
+      <p class="text-copy-icon">Total Number of Student Clubs Members </p>  
+
+</div>
+</div>
+<div class="cards-flex-with-shadow">
+    <div class="fixed-with-the-icons">
+    <div class="card-1-shadow">
+        <div class="position">
+    <svg class="position-icon"  width="216" height="214" viewBox="0 0 216 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d_3253_8691)">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M107.048 10.0381C121.286 10.9263 127.036 32.4479 139.931 39.3051C155.895 47.7947 177.648 40.1234 190.108 54.2077C203.092 68.8835 208.496 92.4451 204.921 112.766C201.385 132.871 186.372 147.972 171.527 159.833C158.728 170.058 141.802 167.878 127.342 174.747C110.237 182.871 97.5324 207.029 79.207 203.684C61.257 200.408 54.8569 174.935 43.0506 159.362C31.3496 143.927 7.84359 132.731 10.1594 112.606C12.6887 90.6258 40.2906 85.861 53.4097 69.3378C61.4686 59.1878 63.1084 44.5897 71.7363 35.051C81.864 23.8543 92.876 9.15403 107.048 10.0381Z" fill="url(#paint0_linear_3253_8691)"/>
+        </g>
+        <defs>
+        <filter id="filter0_d_3253_8691" x="6" y="10" width="204" height="202" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="4"/>
+        <feGaussianBlur stdDeviation="2"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3253_8691"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3253_8691" result="shape"/>
+        </filter>
+        <linearGradient id="paint0_linear_3253_8691" x1="206" y1="76.8048" x2="9.99999" y2="137.195" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#00B2AC"/>
+        <stop offset="0.613208" stop-color="#A9DE96"/>
+        </linearGradient>
+        </defs>
+        </svg>
+        <p class="number">15.000+</p>
+    </div>
+    </div>
+      <p class="text-copy-icon">Total Number of Student Clubs Members </p>  
+
+</div>
+</div>
+<div class="cards-flex-with-shadow">
+    <div class="fixed-with-the-icons">
+    <div class="card-1-shadow">
+        <div class="position">
+    <svg class="position-icon"  width="216" height="214" viewBox="0 0 216 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d_3253_8691)">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M107.048 10.0381C121.286 10.9263 127.036 32.4479 139.931 39.3051C155.895 47.7947 177.648 40.1234 190.108 54.2077C203.092 68.8835 208.496 92.4451 204.921 112.766C201.385 132.871 186.372 147.972 171.527 159.833C158.728 170.058 141.802 167.878 127.342 174.747C110.237 182.871 97.5324 207.029 79.207 203.684C61.257 200.408 54.8569 174.935 43.0506 159.362C31.3496 143.927 7.84359 132.731 10.1594 112.606C12.6887 90.6258 40.2906 85.861 53.4097 69.3378C61.4686 59.1878 63.1084 44.5897 71.7363 35.051C81.864 23.8543 92.876 9.15403 107.048 10.0381Z" fill="url(#paint0_linear_3253_8691)"/>
+        </g>
+        <defs>
+        <filter id="filter0_d_3253_8691" x="6" y="10" width="204" height="202" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="4"/>
+        <feGaussianBlur stdDeviation="2"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3253_8691"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3253_8691" result="shape"/>
+        </filter>
+        <linearGradient id="paint0_linear_3253_8691" x1="206" y1="76.8048" x2="9.99999" y2="137.195" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#00B2AC"/>
+        <stop offset="0.613208" stop-color="#A9DE96"/>
+        </linearGradient>
+        </defs>
+        </svg>
+        <p class="number">11.000+</p>
+    </div>
+    </div>
+      <p class="text-copy-icon">Total Number of Student Clubs Members </p>  
+
+</div>
+</div>
+
+</div>
+</div> 
+
+
+
+
+</main>
+
+
+
+  <!-- Footer -->
+  <footer class="footer pt-5 mt-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="footer-logo">
+            <!-- Replace with your logo image -->
+            <img src="/image/uskudarunilogo.png" class="mb-3" alt="University Logo" height="50">
+            <p>© 2011 - 2024 T.C. Üsküdar University</p>
+            <p>All rights reserved.</p>
+            <p>Software and Planning Unit</p>
+            <p><a href="#">Privacy Policy</a></p>
+          </div>
+        </div>
+
+        <div class="col-md-2 mb-4">
+          <h5>Links</h5>
+          <ul>
+            <li><a href="#">SKS Website</a></li>
+            <li><a href="#">Council of Higher Education</a></li>
+            <li><a href="#">OSYM</a></li>
+            <li><a href="#">CIMER</a></li>
+            <li><a href="#">Information Unit</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h5>Contact</h5>
+          <p>Altunizade Mh. University Street No: 14 PK:34662 Üsküdar / Istanbul / TURKEY</p>
+          <p>+90 (216) 400 22 22</p>
+          <p><a href="#">View with Google Maps</a></p>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign up</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Clubs</a></li>
+            <li><a href="#">Create new club</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.9/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
